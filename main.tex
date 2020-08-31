@@ -1,0 +1,70 @@
+\documentclass[colophon, english]{phduio}
+
+\usepackage{phdstyle}   % Custom style
+\usepackage{kantlipsum} % Dummy text
+
+\author{Author}
+\title{Working Title}
+\subtitle{Optional subtitle}
+\department{Department}
+\faculty{Faculty}
+\affiliation
+{
+    Optional Second Affiliation
+    \and
+    Optional Further Specification
+}
+\ISSN{1234-5678}           % Request correct number from repro@uio.no
+\dissertationseries{1234}  % Request correct number from repro@uio.no
+
+
+\includeonly
+{
+    sections/dedication,
+    sections/preface,
+    sections/papers,
+    sections/introduction,
+    sections/paperI,
+    sections/paperII,
+    sections/paperIII,
+    sections/appendixA,
+    sections/appendixB,
+}
+
+
+\begin{document}
+
+    \frontmatter        % Folios in Roman numerals, unnumbered chapters.
+
+    \uiotitle
+
+    \include{sections/dedication}
+    \include{sections/preface}
+    \include{sections/papers}
+
+    \cleartorecto
+    \tableofcontents    % Or \tableofcontents*
+    \cleartorecto
+    \listoffigures      % Or \listoffigures*
+    \cleartorecto
+    \listoftables       % Or \listoftables*
+
+    \mainmatter         % Folios in Arabic numerals, numbered chapters.
+
+    \include{sections/introduction}
+
+    \paper              % "Chapter" is renamed "Paper"
+    \paperpage          % Similar to \part*{Papers}, but appears in TOC
+    \numberofpapers{3}  % Specify size of thumb indices
+
+    \include{sections/paperI}
+    \include{sections/paperII}
+    \include{sections/paperIII}
+
+    \appendix           % "Chapter" is renamed "Appendix"
+    \appendixpage       % Similar to \part*{Appendices}, but appears in TOC
+
+    \include{sections/appendixA}
+    \include{sections/appendixB}
+
+\end{document}

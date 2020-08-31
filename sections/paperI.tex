@@ -1,0 +1,66 @@
+\author
+{
+    First Author
+    \and
+    Second Author
+}
+\title{The First Paper}
+\thanks{The authors were partially supported by CERN.}
+\metadata
+{
+    Published in \emph{Journal of Universal Rejection},
+    June~2011,
+    volume~3,
+    issue~2,
+    pp.~123--456.
+    \doi{10.1000/182}.
+}
+\maketitle
+\label{pap:first}
+
+\begin{abstract}
+    \kant[7]     % Dummy text
+\end{abstract}
+
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{\section*{\contentsname}}
+
+\section{Introduction}
+
+\kant[8-11]      % Dummy text
+
+\begin{theorem}[{\cite[95]{AM69}}]
+    \label{thm:dedekind}
+    Let \( A \) be a Noetherian domain of dimension one. Then the following are equivalent:
+    \begin{enumerate}
+        \item
+        \( A \) is integrally closed;
+
+        \item
+        Every primary ideal in \( A \) is a prime power;
+
+        \item
+        Every local ring \( A_\mathfrak{p} \) \( (\mathfrak{p} \neq 0) \) is a discrete valuation ring.
+    \end{enumerate}
+\end{theorem}
+
+\begin{acknowledgements}
+    The first author was partially supported by The Research Council of Norway.
+\end{acknowledgements}
+
+%% Format bibliography like a section, not a chapter:
+\printbibliography[heading = subbibliography]
+\stopcontents[chapters]
+
+\paragraph{Authors' addresses}
+\begin{description}
+    \item[First Author]
+    University of Oslo,
+    Postboks 1337 Blindern, 0316 Oslo, Norway,
+    \href{mailto:fauthor@uio.no}{fauthor@uio.no}
+
+    \item[Second Author]
+    Oxbridge University,
+    221B Baker Street, London NW1 6XE, United Kingdom,
+    \href{mailto:second.author@oxbridge.co.uk}{second.author@oxbridge.co.uk}
+\end{description}

@@ -1,0 +1,32 @@
+\author{First Author\protect\footnotemark}
+\title{The Third Paper}
+\metadata{To appear in \emph{Journal of Universal Rejection}.}
+\maketitle
+\label{pap:third}
+
+\footnotetext
+{%
+    University of Oslo,
+    Postboks 1337 Blindern, 0316 Oslo, Norway,
+    \href{mailto:fauthor@uio.no}{fauthor@uio.no}
+}
+
+\begin{abstract}
+    \kant[12] % Dummy text
+\end{abstract}
+
+\section{First Section}
+\kant[13-14]  % Dummy text
+
+\begin{subappendices}             % Appendix for this chapter/paper only
+    \section{First Subappendix}
+    \label[appendix]{sec:sub-app} % Optional argument: Correct cross reference
+    \kant[15]                     % Dummy text
+\end{subappendices}
+
+\begin{acknowledgements}
+    Thanks to the anonymous referee for pointing out that \cref{sec:sub-app} can be found in \cite{Har77}.
+\end{acknowledgements}
+
+%% Format bibliography like a section, not a chapter:
+\printbibliography[heading = subbibliography]
