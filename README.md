@@ -334,10 +334,15 @@ Alternatively, change `giveninits` to `firstinits`.
 These commands are not defined in `biblatex`;
 their analogues are called `\cite` and `\parencite`,
 respectively.
-You can define `\citet` and `\citep` to issue their counterparts by adding the following to the preamble:
+If you use an alphabetical citation style, you can define `\citet` and `\citep` to issue their counterparts by adding the following to the preamble:
 ```latex
 \let\citet\cite
 \let\citep\parencite
+```
+If you are using a numerical citation style, e.g. `sort = numeric-comp`, `citet` may be implemented by:
+``` latex
+\usepackage{xparse}
+\NewDocumentCommand{\citet}{ O{ } O{ } m }{\citeauthor{#3}\cite[{#1}][{#2}]{#3}}
 ```
 
 6. **How can I use *fragile* macros inside `\title` or `\author`?**  
