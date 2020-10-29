@@ -14,6 +14,8 @@ so you do not have to worry about whether the font and figures will be legible a
 * It defines a custom title page.
 * The class provides tools for incorporating separate papers into the thesis.
 
+![Example document](https://i.imgur.com/dGvvQkE.png)
+
 ## Contents
 * [Documentation](#documentation)
   * [Title page](#title-page)
