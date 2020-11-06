@@ -4,7 +4,7 @@
 \NeedsTeXFormat{LaTeX2e}
 
 
-\ProvidesClass{phduio}[2020/02/10 Class for PhD theses at UiO]
+\ProvidesClass{phduio}[2020/11/06 Class for PhD theses at UiO]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CLASS OPTIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -318,7 +318,8 @@
 \renewcommand{\maketitle}
 {
     \paperauthors{\theauthor}
-    \chapter{\thetitle}
+    \edef\papertitle{{\thetitle}}
+    \expandafter\chapter\papertitle
     \paperthumb
     \saythanks
 }
