@@ -377,7 +377,7 @@ chapters should start on a recto page.
 A blank page is inserted if this does not occur naturally.
 
 9. **Why is some text missing from included articlces?**
-This issue occurs if the fonts in the article PDF are not embedded. You can force the inclusion of all fonts from the PDF by setting `\pdfinclusioncopyfonts = 1`. Note that this will increase the file size of your thesis.
+This issue occurs if the fonts in the article PDF are not embedded. You must ensure that all fonts in article PDF are available. The inclusion of all fonts from the PDF can be forced by setting `\pdfinclusioncopyfonts = 1`. Note that this will increase the file size of your thesis.
 
 ## Contact information
 If you need further assistance with the template,
