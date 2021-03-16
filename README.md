@@ -14,7 +14,7 @@ so you do not have to worry about whether the font and figures will be legible a
 * It defines a custom title page.
 * The class provides tools for incorporating separate papers into the thesis.
 
-[![Example document](https://i.imgur.com/dGvvQkE.png)](https://www.duo.uio.no/bitstream/handle/10852/81172/PhD-Helsø-2020.pdf)
+[![Example document](https://i.imgur.com/dGvvQkE.png)](https://www.duo.uio.no/bitstream/handle/10852/81172/PhD-Helsø-2020_rev.pdf)
 
 ## Contents
 * [Documentation](#documentation)
