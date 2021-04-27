@@ -125,6 +125,7 @@
                     \huge
                     \phduio@subtitle
                     \par
+                    \gdef \phduio@subtitle{}
                 }
             }
 
@@ -191,6 +192,7 @@
 
 
 %% Chapter
+\newcommand{\subtitlefont}{}
 \newcommand{\authorsfont}{}
 \newcommand{\metadatafont}{}
 \newlength{\afterauthorsskip}
@@ -202,6 +204,7 @@
     \renewcommand*{\chapnumfont}{\huge\sffamily}
     \renewcommand*{\chaptitlefont}
     {\Huge\bfseries\boldmath\sffamily\raggedright}
+    \renewcommand*{\subtitlefont}{\large\sffamily}
     \renewcommand*{\authorsfont}{\Large\bfseries\sffamily}
     \renewcommand*{\metadatafont}{\normalfont\normalsize\sffamily}
 
@@ -213,16 +216,26 @@
 
     \renewcommand*{\afterchaptertitle}
     {
-        \vskip\afterchapskip
+        
         \ifboolexpr
         {
             test{ \ifcsempty{phduio@authors} }
             and
             test{ \ifcsempty{phduio@metadata} }
         }
-        {}
+        {
+        \vskip\afterchapskip
+        }
         {
         \begin{minipage}[t]{\textwidth}
+            \ifcsempty{\phduio@subtitle}
+                {}
+                {
+                    \subtitlefont
+                    \phduio@subtitle
+                    \gdef \phduio@subtitle{}
+                }
+            \vskip\afterchapskip
             \authorsfont
             \phduio@authors
             \vskip\afterauthorsskip
