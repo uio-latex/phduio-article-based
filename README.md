@@ -127,46 +127,11 @@ such as
 ```
 
 Sometimes the chapter title is too long for the running header.
-In that case you have to use `\chapter` instead of `\maketitle`
+In that case you can give an optional argument to `\maketitle`
 to provide a shorter title for the header.
-You can control the title in the header and the table of contents in one of the following two ways:
 ```latex
-\chapter[TOC and running header]{Chapter page}
-\chapter[TOC][Running header]{Chapter page}
+\maketitle[running header]
 ```
-Using this method,
-you must use `\paperauthors` instead of `\author`.
-Authors are separated with `\and` in the usual fashion.
-If the list of authors does not break prettily across lines,
-consider passing `\raggedright` along the argument to `\paperauthors`
-or control the line breaks manually with `\par`:
-```latex
-\paperauthors
-{
-    \raggedright
-    First Author
-    \and
-    ...
-    \and
-    Last Author
-}
-\paperauthors
-{
-    First Author
-    \and
-    Second Author
-    \and\par
-    Third Author
-}
-```
-
-When using `\chapter` you have to add the thumb index manually with `\paperthumb`
-*directly after* `\chapter` at the start of each paper.
-Compile twice in order to position the thumb index correctly.
-If the thesis consists of n papers,
-the height of each thumb index should be `\paperheight` divded by n.
-You can specify the number of papers by calling `\numberofpapers{n}`
-*before* the first invocation of `\paperthumb`.
 
 #### Including `.tex` files
 It is notoriously difficult to combine the `.pdf` files of different papers into a thesis.

@@ -314,12 +314,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INCLUDE PAPERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%% Title for papers
-\renewcommand{\maketitle}
+%% Title for papers, we introduce an optional argument that can be used to easily set the running title in headers
+\renewcommand{\maketitle}[1][]
 {
     \paperauthors{\theauthor}
     \edef\papertitle{{\thetitle}}
-    \expandafter\chapter\papertitle
+    \chapter[\papertitle][#1]{\papertitle}
     \paperthumb
     \saythanks
 }
