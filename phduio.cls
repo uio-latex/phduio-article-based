@@ -4,7 +4,7 @@
 \NeedsTeXFormat{LaTeX2e}
 
 
-\ProvidesClass{phduio}[2020/11/06 Class for PhD theses at UiO]
+\ProvidesClass{phduio}[2023/07/12 Class for PhD theses at UiO]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CLASS OPTIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -91,7 +91,7 @@
             \raggedright
 
             \vspace*{-5mm}
-            \includegraphics[width = 0.6\textwidth]{figures/phduio-logo}
+            \includegraphics[width = 0.33\textwidth]{figures/phduio-logo}
             \vskip18mm
 
             \resizebox
@@ -152,14 +152,13 @@
             \vfill
 
             \begin{minipage}[c][26mm]{28mm}
-                \hspace*{1.3mm}
-                \includegraphics[width = 26mm]{figures/phduio-apollon}
-            \end{minipage}%
-            \begin{minipage}[c]{\textwidth - 28mm}
-                \hfill
                 \LARGE
                 \bfseries
                 \the\year
+            \end{minipage}%
+            \begin{minipage}[c]{\textwidth - 28mm}
+                \hfill
+                \includegraphics[width = 26mm]{figures/phduio-apollon}
             \end{minipage}
 
             \vspace{2mm}
@@ -411,7 +410,7 @@
 \newcommand{\paperthumb}
 {
     \ifnum \value{thumbpos} = \value{totpapernum}
-    \setcounter{thumbpos}{0}
+        \setcounter{thumbpos}{0}
     \fi
     
     \stepcounter{thumbnum}
@@ -515,18 +514,16 @@
 
 
 %% Offical colours
-\definecolor{uiored}  {cmyk}{0, 1, 1, 0}
-\definecolor{uiogrey} {cmyk}{0, 0.05, 0.1, 0.29}
+\definecolor{uiored}  {cmyk}{0.19, 1, 1, 0.11}
+\definecolor{uiogrey} {cmyk}{0.02, 0.02, 0, 0.28}
 \definecolor{uiowhite}{cmyk}{0, 0, 0, 0}
 \definecolor{uioblack}{cmyk}{0, 0, 0, 1}
-\definecolor{uiolink} {HTML}{0B5A9D}
+\definecolor{uioblue}{cmyk}{0.60, 0.65, 0, 0.16}
+\definecolor{uiogreen}{cmyk}{0.69, 0, .62, 0}
+\definecolor{uioorange}{cmyk}{0, 0.44, 0.9, 0}
+\definecolor{uioyellow}{cmyk}{0.04, 0, 0.44, 0}
+\definecolor{uiolink} {HTML}{B60000}
 
-
-%% Print official logo colon
-\newcommand{\uiocolon}
-{
-    \includegraphics[height = 1.5ex]{figures/phduio-colon}\,%
-}
 
 %% Subtitle
 \newcommand{\subtitle}[1]{ \def \phduio@subtitle{#1} }
@@ -556,8 +553,8 @@
 %% Specify production credits
 \newcommand{\cover}[1]{ \def \phduio@cover{#1} }
 \newcommand{\printinghouse}[1]{ \def \phduio@printinghouse{#1} }
-\cover{Hanne Baadsgaard Utigard}
-\printinghouse{Reprosentralen, University of Oslo}
+\cover{UiO}
+\printinghouse{Graphics Center, University of Oslo}
 
 
 %% Print colophon

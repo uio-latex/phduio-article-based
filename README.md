@@ -1,5 +1,7 @@
 # PHDUIO – Article based thesis
-This LaTeX template is used for article based doctoral theses at the University of Oslo.
+This LaTeX template was used for article based doctoral theses at the University of Oslo.
+For the current official template, see [uiophdthesis](https://www.uio.no/english/about/designmanual/profile-in-use/latex/index.html).
+
 For monographic theses,
 see the template [PHDUIO – Monograph](https://github.com/martinhelso/phduio-monograph).
 
@@ -14,7 +16,7 @@ so you do not have to worry about whether the font and figures will be legible a
 * It defines a custom title page.
 * The class provides tools for incorporating separate papers into the thesis.
 
-[![Example document](https://i.imgur.com/dGvvQkE.png)](https://www.duo.uio.no/bitstream/handle/10852/81172/PhD-Helsø-2020.pdf)
+[![Example document](https://i.imgur.com/AQFvNda.png)](https://www.duo.uio.no/bitstream/handle/10852/81172/PhD-Helsø-2020.pdf)
 
 ## Contents
 * [Documentation](#documentation)
@@ -84,7 +86,7 @@ If needed,
 the credits for cover design and printing can be changed with `\cover` and `\printinghouse`.
 
 You can request the dissertation series number and ISSN/ISBN
-by sending an e-mail to the University Print Centre at [repro@uio.no](mailto:repro@uio.no)
+by sending an e-mail to the Graphics Center at [grafisksenter@uio.no](mailto:grafisksenter@uio.no)
 shortly before submitting the thesis.
 They are also able to edit in the correct numbers directly into the `.pdf` for you.
 
