@@ -554,7 +554,7 @@
 \newcommand{\cover}[1]{ \def \phduio@cover{#1} }
 \newcommand{\printinghouse}[1]{ \def \phduio@printinghouse{#1} }
 \cover{UiO}
-\printinghouse{Graphics Center, University of Oslo}
+\printinghouse{Graphic center, University of Oslo}
 
 
 %% Print colophon
